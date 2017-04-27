@@ -43,6 +43,7 @@ gulp.task('sass', () => gulp.src('src/scss/main.scss')
 gulp.task('default', ['bs', 'sass'], () => {
   gulp.watch('src/scss/*.scss', ['sass']);
   gulp.watch('src/index.html', reload);
+  gulp.watch('src/test.js', reload);
   gulp.watch('src/css/main.css', reload);
   gulp.watch('src/css/styles.css', reload);
 })
