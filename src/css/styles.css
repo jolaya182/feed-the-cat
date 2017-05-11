@@ -5,6 +5,9 @@ body {
         position:  relative; 
 }
 
+#clownFish{
+        z-index:99;
+}
 
 .cat-right-ear {
         position: absolute;

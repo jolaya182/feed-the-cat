@@ -12,14 +12,11 @@ $(document).ready(function(){
  
 
 	});//end of draggable
- $(".cat-face").droppable({
+ $(".cat-body").droppable({
  	drop:function(event, ui){
- 		var cF=$('#clownFish'); cF.fadeOut(500);
+    var cF=$('#clownFish'); 
+    cF.fadeOut(500);
  		setTimeout(function(){var cF=$('#clownFish');bringFood(cF) }, 1000)
- 		
- 		
-
-
 
  	}//end of drop event
  });
@@ -31,7 +28,7 @@ $(document).ready(function(){
 
 	var functionDraggable=function(element){
 		var cF=$('#clownFish');
- 		var catF=$('.cat-face');
+ 		var catF=$('.cat-body');
  		var objMiddle=  catF.offset().left +catF.width()/2;
  		var clownMiddle=  cF.offset().left + cF.width()/2; 
  		
