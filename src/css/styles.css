@@ -1,20 +1,202 @@
-body {  
-        /* background-color: yellow; */
-}
-.redbox{
-
-	margin: auto;
-	width: 200px;
-	height:200px;
-
+body {
+        margin: 0;
+        padding: 0;
+        background-color: lightcyan;
+        position:  relative; 
 }
 
-.flip{
-    -moz-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    transform: scaleX(-1);
-    -ms-filter: fliph; /*IE*/
-    filter: fliph; /*IE*/
+.cat-right-ear {
+        position: absolute;
+        width: 0;
+        top: -40px;
+        left: 115px;
+        height: 0;
+        border-bottom: 80px solid gray;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        cursor: pointer;
+        transform: rotate(30deg);
 }
 
+.cat-left-ear{
+        position: absolute;
+        width: 0;
+        top: -40px;
+        height: 0;
+        border-bottom: 80px solid gray;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        cursor: pointer;
+        transform: rotate(-30deg);
+}
+
+.cat-body {
+        position: fixed;
+        /* background-color: red; */
+        top: 40%;
+        left: 50%;
+        width: 200px;
+        margin-left: -100px;
+        margin-top: -100px;
+        height: 200px;
+}
+
+.cat-face {
+        position: relative;
+        background-color: gray;
+        width: 180px;
+        height: 180px;
+        margin: auto;
+        border-radius: 50%;
+}
+
+.cat-left-eye {
+        position: relative;
+        background-color: white;
+        left: 30px;
+        top: 40px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+}
+
+.left-pupil {
+        position: relative;
+        background-color: black;
+        left: 30%;
+        top: 30%;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+}
+
+.cat-right-eye {
+        position: relative;
+        background-color: white;
+        left: 100px;
+        top: -10px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+}
+
+.right-pupil {
+        position: relative;
+        background-color: black;
+        left: 30%;
+        top: 30%;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+}
+
+.cat-mouth{
+        position: relative;
+        /* background-color: black; */
+        margin: auto;
+        bottom: 10px;
+        width: 130px;
+        height: 65px;
+}
+
+
+.cat-closed-nose{
+        position: relative;
+        background-color: pink;
+        margin: auto;
+        top: 20%;
+        width: 15px;
+        height: 10px;
+        border-radius: 50%;
+}
+
+.cat-closed-mouth{
+        position: relative;
+        background-color: black;
+        margin: auto;
+        top: 33%;
+        width: 10px;
+        height: 5px;
+        border-radius: 50%;
+}
+
+.cat-left-whisker{
+        position: absolute;
+        /* background-color: black; */
+        margin: auto;
+        top: 10%;
+        /* left: -30%; */
+        width: 55px;
+        height: 50px;
+        /* border-radius: 50%; */
+}
+
+.cat-right-whisker{
+        position: absolute;
+        /* background-color: black; */
+        margin: auto;
+        top: 10%;
+        left: 58%;
+        width: 55px;
+        height: 50px;
+        /* border-radius: 50%; */
+}
+
+.cat-belly {
+        position: relative;
+        background-color: gray;
+        margin: auto;
+        width: 150px;
+        height: 200px;
+        border-radius: 45%;
+        margin-top: -50px;
+        z-index: -1;
+}
+
+.cat-tail {
+        position: absolute;
+        top: 230px;
+        left: -10px;
+        width: 140px;
+        height: 110px;
+        background-color: transparent;
+        border: 20px solid #70737d;
+        border-width: 0 0 20px 25px;
+        border-radius: 85px/70px;
+        z-index: -2;
+        -webkit-animation: tail_flick 11s infinite;
+}
+
+.flip {
+        -moz-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        transform: scaleX(-1);
+        -ms-filter: fliph;
+        /*IE*/
+        filter: fliph;
+        /*IE*/
+}
+
+.cat-left-feet{
+        position: relative;
+        background-color: white;
+        left: 22%;
+        top: 80%;
+        border-radius: 50% 50% 30% 30%;
+        width: 40px;
+        height: 30px;
+        display: inline-block;
+}
+
+.cat-right-feet{
+        display: inline-block;
+        position: relative;
+        background-color: white;
+        left: 22%;
+        top: 80%;
+        border-radius: 50% 50% 30% 30%;
+        width: 40px;
+        height: 30px;
+        z-index: -4;
+}
