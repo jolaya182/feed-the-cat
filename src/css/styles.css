@@ -5,6 +5,7 @@ body {
         position:  relative; 
 }
 
+
 .cat-right-ear {
         position: absolute;
         width: 0;
@@ -89,6 +90,7 @@ body {
         width: 20px;
         height: 20px;
 }
+
 
 .cat-mouth{
         position: relative;
