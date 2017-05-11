@@ -1,11 +1,12 @@
 body {  
         /* background-color: yellow; */
 }
-.redbox{
+.cat-face{
 
 	margin: auto;
 	width: 200px;
 	height:200px;
+    background-color: red;
 
 }
 
