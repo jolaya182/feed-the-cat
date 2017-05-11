@@ -1,12 +1,12 @@
 {
   "name": "gulp-2017",
   "version": "1.0.0",
-  "description": "",
+  "description": "I just need a clean gulp setup with hot realod and error notification, with zero distraction from other tools, preprocessors, etc.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "jolaya182 <jolaya182@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.6",
@@ -15,5 +15,13 @@
   },
   "dependencies": {
     "gulp-sass": "^3.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jolaya182/feed-the-cat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jolaya182/feed-the-cat/issues"
+  },
+  "homepage": "https://github.com/jolaya182/feed-the-cat#readme"
 }
