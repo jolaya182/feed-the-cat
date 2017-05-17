@@ -14,7 +14,10 @@ $(document).ready(function(){
 	});//end of draggable
  $(".cat-body").droppable({
  	drop:function(event, ui){
-    var cF=$('#clownFish'); 
+    var cF=$('#clownFish');
+    //cat should move the mouth
+    catOpenMouth();
+
     cF.fadeOut(500);
  		setTimeout(function(){var cF=$('#clownFish');bringFood(cF) }, 1000)
 
@@ -46,5 +49,10 @@ $(document).ready(function(){
  		}//end of if
 
 	}//end of function
+
+	function catOpenMouth(){
+
+		
+	}//end of catOpenMouth
 
 });//end of jquery
