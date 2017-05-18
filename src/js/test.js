@@ -16,7 +16,11 @@ $(document).ready(function(){
  	drop:function(event, ui){
     var cF=$('#clownFish');
     //cat should move the mouth
-    catOpenMouth();
+    liftMouth($(".cat-mouth"));
+    //liftMouth catOpenMouth
+    //narrowEyes
+    unliftMouth($(".cat-mouth"));
+    //unnarroweEyes
 
     cF.fadeOut(500);
  		setTimeout(function(){var cF=$('#clownFish');bringFood(cF) }, 1000)
@@ -36,7 +40,7 @@ $(document).ready(function(){
  		var clownMiddle=  cF.offset().left + cF.width()/2; 
  		
 
- 		console.log("objMiddle:" + objMiddle + " clownMiddle:" +clownMiddle);
+ 		//console.log("objMiddle:" + objMiddle + " clownMiddle:" +clownMiddle);
 
  		if(clownMiddle>= objMiddle ){
  			cF.removeClass("flip");
@@ -50,9 +54,21 @@ $(document).ready(function(){
 
 	}//end of function
 
-	function catOpenMouth(){
+	function liftMouth(theCatFaceObj){
 
+		var cfo=$(theCatFaceObj);
+		cfo.animate({'top':"-=30px"}, "slow");
 		
 	}//end of catOpenMouth
+
+	unliftMouth
+
+function unliftMouth(theCatFaceObj){
+
+		var cfo=$(theCatFaceObj);
+		cfo.animate({'top':"+=30px"}, "slow");
+		
+	}//end of catOpenMouth
+
 
 });//end of jquery
